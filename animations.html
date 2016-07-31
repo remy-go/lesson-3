@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IT Mokyklos užrašai</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1>IT Mokyklos užrašai</h1>
+      </header>
+      <nav>
+        <a href="index.html">
+          <div class="menu">Pradžia</div>
+        </a>
+        <a href="positions.html">
+          <div class="menu">Positions</div>
+        </a>
+        <a href="animations.html">
+          <div class="menu">Animacijos</div>
+        </a>
+        <a href="">
+          <div class="menu"></div>
+        </a>
+        <a href="">
+          <div class="menu"></div>
+        </a>
+      </nav>
+      <div id="content">
+        <div class="square" id="a1"></div>
+        <div class="square" id="a2"></div>
+        <div class="square" id="a3">ABC</div>
+        <div class="square" id="a4"></div>
+        <div class="square" id="a5"></div>
+        <div class="square" id="a6"></div>
+        <div class="square" id="a7"></div>
+        <div class="square" id="a8"></div>
+        <div class="square" id="a9"></div>
+        <div class="square" id="a10"></div>
+      </div>
+      <div style="clear: both;"></div>
+      <footer>
+        <div>2016</div>
+      </footer>
+    </div>
+
+    <!-- vanilla js -->
+    <script>
+
+var squares = document.getElementsByClassName('square');
+
+for (var i = 0; i < 10; i++) {  
+  (function(n) { 
+    var square = squares[n];
+    square.addEventListener('click', function() {
+      square.style.animationName = 'a' + (n+1);
+    }, false);
+
+    square.addEventListener('animationend', function() {
+      square.style.animationName = 'none'; 
+    }, false);
+
+  })(i);
+}
+
+    </script>
+
+    <!-- jQuery
+
+      <script>
+var squares = $('.square');
+squares.each(function(index, element) {
+  $(element).click(function() {
+    $(element).css('animationName', 'a' + (index+1));
+  });
+  $(element).one('animationend', function() {
+    $(element).css('animationName', 'none')
+  });
+});
+      </script> -->
+
+
+  </body>
+</html>

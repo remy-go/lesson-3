@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#page {
+  width: 1000px;
+  background-color: beige;
+  margin: 0px auto;
+  min-height: 100%;
+  position: relative;
+}
+
+#page > header {
+  height: 165px;
+  line-height: 100px;
+  border-bottom: double 1px orange;
+  background-image: url("../images/code.png");
+  margin-bottom:20px;
+}
+
+#page > header > h1 {
+  text-align: center;
+  font-family: sans;
+  color: grey;
+  line-height: 165px;
+}
+
+
+nav {
+  min-height: 100vh;
+  width: 200px;
+  float: left;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 0px 2px;
+}
+
+div.menu {
+  height: 40px;
+  padding-left: 1em;
+  margin-bottom: 3px;
+  line-height: 40px;
+  transition: background-color 0.1s;
+  background: linear-gradient(beige, seashell);
+  color: darkorange;
+  text-shadow: 2px 2px lightgray;
+  border: gray 1px solid;
+  border-radius: 3px;
+}
+
+div.menu:hover {
+  background: linear-gradient(darkgray, lightgray);
+}
+
+
+#content {
+  box-sizing: border-box;
+  width: 800px;
+  float: left;
+  min-height: 100vh;
+  border-left: solid 1px orange;
+  padding: 20px;
+  margin-bottom: 101px;
+}
+
+
+
+footer {
+  clear: both;
+  height: 100px;
+  width: 100%;
+  border-top: solid orange 1px;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer div {
+  text-align: center;
+  line-height: 100px;
+}

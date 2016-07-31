@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IT Mokyklos užrašai</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/positions.css">
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1>IT Mokyklos užrašai</h1>
+      </header>
+      <nav>
+        <a href="index.html">
+          <div class="menu">Pradžia</div>
+        </a>
+        <a href="positions.html">
+          <div class="menu">Positions</div>
+        </a>
+        <a href="animations.html">
+          <div class="menu">Animacijos</div>
+        </a>
+        <a href="">
+          <div class="menu"></div>
+        </a>
+        <a href="">
+          <div class="menu"></div>
+        </a>
+      </nav>
+      <div id="content">
+        <h2>Bandymai su „position“ savybe</h2>
+        <div id="exercise1">
+          <div id="big">
+            <div id="cont">
+              <div id="child1"></div>
+              <div id="child2"></div>
+            </div>
+          </div>
+        </div>
+        <pre>
+        <code>
+          #exercise1 #big {
+              width: 400px;
+              height: 400px;
+              background-color: brown;
+              margin: 80px;
+            }
+
+          #exercise1 #cont {
+              width: 200px;
+              height: 200px;
+              color: #000099;
+              background-color: grey;
+              top: 60px;
+              left: 60px;
+              position:relative;
+            }
+
+          #exercise1 #child1 {
+              width: 20px;
+              height: 20px;
+              background-color: green;
+              position: absolute;
+            }
+
+          #exercise1 #child2 {
+              width: 20px;
+              height: 20px;
+              background-color: orange;
+              position: absolute;
+              left: -20px;
+              top: 40px;
+            }
+        </code>
+        </pre>
+
+      </div>
+      <div style="clear: both;"></div>
+      <footer>
+        <div>2016</div>
+      </footer>
+    </div>
+  </body>
+</html>

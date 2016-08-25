@@ -1,0 +1,21 @@
+form label {
+  display: inline-block;
+  width: 8em;
+}
+
+form input {
+  margin-bottom: 4px;
+}
+
+form legend {
+  margin-bottom: 8px;
+}
+
+div#success {
+  display: none;
+}
+
+
+div#unsuccess {
+  display: none;
+}

@@ -24,8 +24,8 @@
         <a href="animations.html">
           <div class="menu">Animacijos</div>
         </a>
-        <a href="">
-          <div class="menu"></div>
+        <a href="registration.html">
+          <div class="menu">Registracija</div>
         </a>
         <a href="">
           <div class="menu"></div>
@@ -49,41 +49,7 @@
       </footer>
     </div>
 
-    <!-- vanilla js -->
-    <script>
-
-var squares = document.getElementsByClassName('square');
-
-for (var i = 0; i < 10; i++) {  
-  (function(n) { 
-    var square = squares[n];
-    square.addEventListener('click', function() {
-      square.style.animationName = 'a' + (n+1);
-    }, false);
-
-    square.addEventListener('animationend', function() {
-      square.style.animationName = 'none'; 
-    }, false);
-
-  })(i);
-}
-
-    </script>
-
-    <!-- jQuery
-
-      <script>
-var squares = $('.square');
-squares.each(function(index, element) {
-  $(element).click(function() {
-    $(element).css('animationName', 'a' + (index+1));
-  });
-  $(element).one('animationend', function() {
-    $(element).css('animationName', 'none')
-  });
-});
-      </script> -->
-
+    <script type="text/javascript" src="js/animations.js"></script>
 
   </body>
 </html>

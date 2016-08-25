@@ -4,6 +4,7 @@ div.square {
   margin-left: 100px;
   margin-bottom: 40px;
   animation-duration: 2s;
+  float: left;
 }
 
 div#content {
